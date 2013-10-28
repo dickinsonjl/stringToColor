@@ -1,11 +1,11 @@
-function colorCode(str, mode)
+function colorCode(str, lightness, mode)
 {
 	var r = 128;
 	var g = 64;
 	var b = 32;
 	var gs = 0;
 
-	var lightness = 210; // min 0, max 255.
+	lightness = lightness % 256;
 
 	var front;
 	var back;
